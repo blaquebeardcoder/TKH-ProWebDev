@@ -1,0 +1,13 @@
+let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+let o = ["th", "st", "nd", "rd"]; 
+
+let order;
+
+for(let i = 0; i < color.length; i++){
+    if(i < 3)   
+        order = o[i + 1];
+    else
+        order = o[0];
+    
+    console.log((i+1 ) + order + "choice is " + color[i]);
+}
